@@ -66,17 +66,68 @@
 
 //an array of arrays
 
-const foo = [
-    [1, 2, 3],
-    ["4", "5", "6"],
-    [7, 8, 9],
-    () => {
-        console.log("I am a function inside an array")
+// const foo = [
+//     [1, 2, 3],
+//     ["4", "5", "6"],
+//     [7, 8, 9],
+//     () => {
+//         console.log("I am a function inside an array")
+//     }
+// ]
+
+// console.log(foo[0]) //[]
+// console.log(foo[0][1])  //2
+
+// //Storing functions in an array
+// console.log(foo[3]());
+
+//creating a class
+
+// class Character {
+//     greet () {
+//         console.log('hello');
+//     }
+// }
+
+// const me = new Character();
+// const you = new Character();
+
+// me.greet();
+// you.greet();
+
+
+
+class Character {
+    constructor(name, age, eyes, hair, lovesCats = true, lovesDogs) {
+        this.legs = 2;
+        this.arms = 2;
+        this.name = name;
+        this.age = age;
+        this.eyes = eyes;
+        this.hair = hair;
+        this.lovesCat = lovesCats;
+        this.lovesDogs = lovesDogs
     }
-]
 
-console.log(foo[0]) //[]
-console.log(foo[0][1])  //2
+    //method 1
+    greet (otherCharacter) {
+        console.log('Hello ${otherCharacter}');
+    }
+    //method2
+    smite () {
+        console.log(`I will smite you!`)
+    }
+}
 
-//Stpring functions in an array
-console.log(foo[3]());
+const alexander = new Character();
+const brock = new Character();
+
+    // // alexander.greet("brock");
+    // // brock.greet("alexander");
+    // alexander.smite()
+
+    //name, age, eyes, hair, cats, dogs
+    const azreal = new Character ('azreal', '150', 'green', 'sliver', false, true);
+    console.log(azreal);
+
+
