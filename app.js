@@ -89,45 +89,147 @@
 //     }
 // }
 
-// const me = new Character();
-// const you = new Character();
+// // const me = new Character();
+// // const you = new Character();
 
-// me.greet();
-// you.greet();
+// // me.greet();
+// // you.greet();
 
 
 
-class Character {
-    constructor(name, age, eyes, hair, lovesCats = true, lovesDogs) {
-        this.legs = 2;
-        this.arms = 2;
-        this.name = name;
-        this.age = age;
-        this.eyes = eyes;
-        this.hair = hair;
-        this.lovesCat = lovesCats;
-        this.lovesDogs = lovesDogs
-    }
+// // class Character {
+// //     constructor(name, age, eyes, hair, lovesCats = true, lovesDogs) {
+// //         this.legs = 2;
+// //         this.arms = 2;
+// //         this.name = name;
+// //         this.age = age;
+// //         this.eyes = eyes;
+// //         this.hair = hair;
+// //         this.lovesCat = lovesCats;
+// //         this.lovesDogs = lovesDogs
+// //     }
 
-    //method 1
-    greet (otherCharacter) {
-        console.log('Hello ${otherCharacter}');
-    }
-    //method2
-    smite () {
-        console.log(`I will smite you!`)
-    }
-}
+// //     //method 1
+// //     greet (otherCharacter) {
+// //         console.log('Hello ${otherCharacter}');
+// //     }
+// //     //method2
+// //     smite () {
+// //         console.log(`I will smite you!`)
+// //     }
+// // }
 
-const alexander = new Character();
-const brock = new Character();
+// // const alexander = new Character();
+// // const brock = new Character();
 
-    // // alexander.greet("brock");
-    // // brock.greet("alexander");
-    // alexander.smite()
+//     // // alexander.greet("brock");
+//     // // brock.greet("alexander");
+//     // alexander.smite()
 
-    //name, age, eyes, hair, cats, dogs
-    const azreal = new Character ('azreal', '150', 'green', 'sliver', false, true);
-    console.log(azreal);
+//     //name, age, eyes, hair, cats, dogs
+//     // const azreal = new Character ('azreal', '150', 'green', 'sliver', false, true);
+//     // console.log(azreal);
 
+
+//     class Character {
+//         constructor (name, age, eyes, hair, lovesCats = true, lovesDogs) {
+//           this.legs = 2;
+//           this.arms = 2;
+//           this.name = name;
+//           this.age = age;
+//           this.eyes = eyes;
+//           this.hair = hair;
+//           this.lovesCats = lovesCats;
+//           this.lovesDogs = lovesDogs || true;
+//         }
+//         greet (otherCharacter) {
+//           console.log('hi ' + otherCharacter + '!');
+//         }
+//         classyGreeting (otherClassyCharacter) {
+//           console.log('Howdy ' + otherClassyCharacter.name + '!');
+//         }
+//         setHair (hairColor) {
+//           this.hair = hairColor;
+//         }
+//         smite () {
+//           console.log('i smited thee.');
+//         }
+      
+//       }
+//         const hobbit = new Character('Mr Baggins', 33, 'brown', 'black')
+//     //   console.log(hobbit);
+
+//     //   class Hobbit extends Character{
+//     //         constructor (name, age, eyes, hair)
+//     //         super(name, age, eyes, hair)
+//     //         this.skills = ['thievery', 'speed']
+//     //   }
+//     //   {
+//     //     steal () {
+//     //         console.log("lets get away!")
+//     //     }
+//     //     smite (){
+//     //         super.super();
+//     //         this.steal();
+//     //     }
+
+//     //   }
+//     //   const frodo = new Hobbit('frodo', 30, 'blue', 'black')
+//     // //   console.log(frodo)
+//     // frodo.classyGreeting(hobbit);
+//     // frodo.smite()
+
+// //Factory function
+
+//     class Car {
+// constructor(make, vin) {
+//     this.make = make;
+//     this.vin = vin;
+// }
+// //methods
+//     drive(){
+//         console.log('vroom vroom')
+//     }
+//     }
+
+//     //creat an object
+
+//     const mazda = new Car('mazda', 245345345);
+//     // console.log(mazda)
+
+//     class Factory (factory) {
+//         constructor (company) {
+//             this.company = company;
+//             this.cars = [];
+    
+//         }
+//         generateCar() {
+//             const newCar = new Car(this.company, this.car.length);
+//             this.cars.push(newCar)
+//         }
+//         findCar (index) {
+//             return this.cars[index]
+
+//         }
+//     }
+
+//     // const tesla = new Factory('Tesla');
+//     // console.log(tesla)
+//     // tesla.generateCar();
+//     // console.log(tesla)
+
+//     //find car
+
+//     console.log(tesla.findCar(0))
+
+
+
+// const porche = new Factory('Porche');
+// porche.generateCar();
+// porche.generateCar();
+// porche.generateCar();
+// porche.generateCar();
+
+// console.log(porche);
+// // console.log(porche.findCar(0));
 
